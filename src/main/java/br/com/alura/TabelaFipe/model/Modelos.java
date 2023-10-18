@@ -1,10 +1,10 @@
 package br.com.alura.TabelaFipe.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.List;
 
-//@JsonIgnore Properties (ignore Unknown = true)
+@JsonIgnoreProperties(ignoreUnknown = true)
 public record Modelos (List<DadosVeiculo> modelos) {
 
 }
